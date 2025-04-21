@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #1a4d80, #2a6ba5);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #1a4d80;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background: #1a4d80;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+footer {
+    background: #1a4d80;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 0rem;
+}
+
+.team-group {
+    margin: 2.5rem 0;
+}
+
+.team-category {
+    color: #1a4d80;
+    border-left: 4px solid #2a6ba5;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-size: 1.4em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+.logo {
+    max-width: 400px;
+    margin: 1rem auto;
+    display: block;
+}
+
+#home .card p {
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+#home .card p:first-of-type {
+    margin-top: 3rem;
+}
+
+#home .card p:last-child {
+    margin-bottom: 0;
+}
